@@ -1,0 +1,17 @@
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+  background-color: whitesmoke;
+}
+
+.card {
+  border:none;
+  margin: 1rem;
+}
+
+.btn-light {
+  background-color: lightgray;
+  margin: 0.2rem;
+}
+
+
