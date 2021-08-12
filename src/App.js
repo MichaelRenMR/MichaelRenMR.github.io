@@ -23,49 +23,55 @@ import './App.css';
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     exact: true,
     sidebar: () => <div>Home</div>,
     main: () => <Homepage/>
   },
   {
     path: "/projects",
+    exact: true,
     sidebar: () => <div>Projects</div>,
     main: () => <Projects/>
   },
   {
     path: "/about",
+    exact: true,
     sidebar: () => <div>About</div>,
     main: () => <About/>
   }
 ];
 
 
-function App() {
+function App() {  
   return (
     <Router>
       <Route render={({ location }) => (
         <div>
-          <div className="App">
-            <div className="containerFluid">
-              <div className="row">
-                <div className="col-4">
-                  <Sidebar children={routes}/>
-                </div>
-                <div className="col-8" id="main">
-                  <TransitionGroup>
-                    <CSSTransition key={location.key} timeout={300} classNames='fade'>
-                      <Switch location={location}>
-                      {routes.map((route, index) => (
-                        <Route
-                          exact path={route.path}
-                          children={<route.main />}
-                        />
-                      ))}
-                      </Switch>
-                    </CSSTransition>
-                  </TransitionGroup>
-                </div>
+          <div className="App containerFluid">
+            <div id="appRow">
+              <div className="col-4-custom" id="sidebar">
+                <Sidebar children={routes}/>
+              </div>
+              <div className="col-8-custom" id="main">
+                <TransitionGroup>
+                  <CSSTransition key={location.key} timeout={300} classNames='fade'>
+                    <Switch location={location}>
+                    {routes.map((route) => (
+                      <Route
+                        exact path={route.path}
+                        children={<route.main />}
+                      />
+                    ))}
+                      <Route exact path = "/personal/projects">
+                        <Redirect to="/projects" />
+                      </Route>
+                      <Route path = "/">
+                        <Redirect to="/home" />
+                      </Route>
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
               </div>
             </div>
           </div>

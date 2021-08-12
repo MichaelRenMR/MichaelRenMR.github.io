@@ -3,6 +3,34 @@ import './Projects.css'
 
 const projects = [
   {
+    name: "Scribary", 
+    summary: <div>A note sharing platform which streamlines student learning during the pandemic. Built in collaboration with <a href='https://github.com/mathewjhan/'>Mathew Han</a> and <a href='https://github.com/maggie-yu-10'>Maggie Yu</a> at HackUMass VIII.</div>,
+    thumbnail: require("./thumbnails/scribary.png"),
+    tools: "React | Flask | AWS S3 | Apache Cassandra | DataStax Astra | Google Cloud",
+    links: [
+      {
+        link:"https://github.com/mathewjhan/scribary",
+        desc:"GitHub Repo" 
+      },
+      {
+        link:"https://dashboard.hackumass.com/projects/95",
+        desc:"Hackathon Post" 
+      }
+    ]
+  }, 
+  {
+    name: "CS184: Melting Simulator",
+    summary: <div>A real-time melting simulator based on a molecular model built in Unity Game Engine. Built in collaboration with <a href='https://github.com/mathewjhan/'>Mathew Han</a>.</div>, 
+    thumbnail: require("./thumbnails/melter.png"),
+    tools: "Unity | C#",
+    links: [
+      {
+        link: "https://michaelrenmr.github.io/cs184-melter/",
+        desc: "Project Website"
+      }
+    ]
+  },
+  {
     name: "CS184: Path Tracer", 
     summary: <div>A basic path tracer which renders scenes realistically by following light bounces.</div>,
     thumbnail: require("./thumbnails/pathtracer.png"),
@@ -19,22 +47,10 @@ const projects = [
     ]
   }, 
   {
-    name: "Cal1Cardistry",
-    summary: <div>A Chrome extension which consolidates information about your Cal1Card (meal swipes remaining, debit dollars, flex dollars) into one place.</div>,
-    thumbnail: require("./thumbnails/cal1card.jpg"),
-    tools: "Javascript",
-    links: [
-      {
-        link: "https://github.com/MichaelRenMR/Cal1Cardistry",
-        desc: "GitHub Repo"
-      }
-    ]
-  }, 
-  {
     name: "Garbage Begone!",
     summary: <div>An AI powered garbage sorter for differentiating cardboard, metal, and paper. Built in collaboration with <a href="https://github.com/Anthonyyzhou">Anthony Zhou</a>, <a href="https://devpost.com/aw1605">Andrew Wang</a>, and <a href="https://github.com/fredwang25">Frederic Wang</a> at HackSC 2020.</div>, 
     thumbnail: require("./thumbnails/garbagebegone.jpg"),
-    tools: "Python, Tensorflow, Keras, Arduino, Jupyter",
+    tools: "Python | Tensorflow | Keras | Arduino | Jupyter",
     links: [
       {
         link: "https://devpost.com/software/garbage-b-gone",
@@ -47,14 +63,14 @@ const projects = [
     ]
   },
   {
-    name: "CS184: Melting Simulator",
-    summary: <div>A real-time melting simulator based on a molecular model built in Unity Game Engine. Built in collaboration with <a href='https://github.com/mathewjhan/'>Mathew Han</a>.</div>, 
-    thumbnail: require("./thumbnails/melter.png"),
-    tools: "Unity, C#",
+    name: "Cal1Cardistry",
+    summary: <div>A Chrome extension which consolidates information about your Cal1Card (meal swipes remaining, debit dollars, flex dollars) into one place.</div>,
+    thumbnail: require("./thumbnails/cal1card.jpg"),
+    tools: "JavaScript",
     links: [
       {
-        link: "https://michaelrenmr.github.io/cs184-melter/",
-        desc: "Project Website"
+        link: "https://github.com/MichaelRenMR/Cal1Cardistry",
+        desc: "GitHub Repo"
       }
     ]
   }
@@ -63,16 +79,15 @@ const projects = [
 function ProjectCard(project) {
   return (
     <div className="row">
-    <div className="col-12">
       <div className="card">
         <div className="card-horizontal">
           <div className="img-square-wrapper">
-            <img src={project.thumbnail} alt="Card image cap" width="280rem"/>
+            <img src={project.thumbnail} alt="" id="project-thumbnail"/>
           </div>
           <div className="card-body d-flex flex-column">
             <h3 className="card-title">{project.name}</h3>
             <h5 className="Card-text">{project.summary}</h5>
-            <p className="Card-text">Tools: {project.tools}</p>
+            <p className="Card-text" id="tools">{project.tools}</p>
             <div className="mt-auto">
             {project.links.map((link) => (
                   <a href={link.link} className="btn btn-light">{link.desc}</a>
@@ -83,7 +98,6 @@ function ProjectCard(project) {
         </div>
       </div>
     </div>
-  </div>
   )
 }
 
@@ -93,9 +107,12 @@ export default function Projects() {
        <h1>Projects</h1>
         <hr/>
         <p>The personal and group projects which I've worked on over the years.</p>
+        <div id="projects">
         {projects.map((project) => (
          ProjectCard(project)
         ))}
+        </div>
+        
     </div>
   )
 }
