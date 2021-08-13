@@ -32,7 +32,7 @@ export default function Sidebar(props) {
     <div id="sticky-sidebar">
       <div id="sidebar-content">
         <div id="profile-picture">
-          <img src={require("./profile-circle.png")} alt="" className="img-fluid"/>
+          <img src={require("Images/profile-circle.png")} alt="" className="img-fluid"/>
         </div>
         <div id="profile">
           <h3><b>Michael Ren</b></h3>

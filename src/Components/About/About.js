@@ -6,6 +6,7 @@ export default function About() {
     <div>
       <h1>About</h1>
         <hr/>
+        <img src={require("Images/profile-circle.png")} alt="" className="img-fluid"/>
         <p>
           I'm Michael Ren, an Electrical Engineering and Computer Science major at UC Berkeley. This past summer, I was a 
           software engineering intern at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
