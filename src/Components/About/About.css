@@ -8,7 +8,7 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
   width: 100%;
   border: 1px solid lightgray;
 }
@@ -19,14 +19,6 @@ iframe {
   justify-content: space-between;
 }
 
-.coursework {
-  flex-basis: 50%;
-}
-
-.timeline {
-  flex-basis: content;
-}
-
 .muiTimelineWrapper {
   margin-left: -95%;
 }
@@ -34,5 +26,12 @@ iframe {
 @media screen and (min-width: 992px) {
   .picture {
     width: 30%;
+  }
+
+  .coursework {
+    flex-basis: 50%;
+  }
+  .timeline {
+    flex-basis: content;
   }
 }
