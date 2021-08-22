@@ -81,13 +81,11 @@ function ProjectCard(project) {
     <div className="row">
       <div className="card">
         <div className="card-horizontal">
-          <div className="img-square-wrapper">
-            <img src={project.thumbnail} alt="" id="project-thumbnail"/>
-          </div>
+          <img src={project.thumbnail} alt="" className="project-thumbnail"/>
           <div className="card-body d-flex flex-column">
             <h3 className="card-title">{project.name}</h3>
             <h5 className="Card-text">{project.summary}</h5>
-            <p className="Card-text" id="tools">{project.tools}</p>
+            <p className="Card-text tools">{project.tools}</p>
             <div className="mt-auto">
             {project.links.map((link) => (
                   <a href={link.link} className="btn btn-light">{link.desc}</a>
@@ -107,7 +105,7 @@ export default function Projects() {
        <h1>Projects</h1>
         <hr/>
         <p>The personal and group projects which I've worked on over the years.</p>
-        <div id="projects">
+        <div className="projects">
         {projects.map((project) => (
          ProjectCard(project)
         ))}

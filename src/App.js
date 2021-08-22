@@ -49,11 +49,11 @@ function App() {
       <Route render={({ location }) => (
         <div>
           <div className="App containerFluid">
-            <div id="appRow">
-              <div className="col-4-custom" id="sidebar">
+            <div className="appRow">
+              <div className="col-4-custom sidebar">
                 <Sidebar children={routes}/>
               </div>
-              <div className="col-8-custom" id="main">
+              <div className="col-8-custom main">
                 <TransitionGroup>
                   <CSSTransition key={location.key} timeout={300} classNames='fade'>
                     <Switch location={location}>
@@ -67,7 +67,7 @@ function App() {
                         <Redirect to="/projects" />
                       </Route>
                       <Route path = "/">
-                        <Redirect to="/home" />
+                        <Redirect to="/about" />
                       </Route>
                     </Switch>
                   </CSSTransition>

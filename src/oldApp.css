@@ -1,0 +1,136 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 0.8em; 
+}
+
+li {
+  font-size: 0.8em;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+
+html { 
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.main {
+  padding: 8%;
+  margin-bottom: 3%;
+}
+
+.appRow {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-4-custom {
+  width: 100%; 
+}
+
+.col-8-custom {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px){
+
+  .main {
+    padding: 3% 3% 0 0;
+  }
+
+  .appRow {
+    display: flex; 
+    flex-direction: row; 
+  }
+
+  .col-4-custom {
+    width: 30%; 
+  }
+  
+  .col-8-custom {
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 3vw;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-size: 2.1em;
+  }
+  
+  h4 {
+    font-size: 1.8em;
+  }
+  
+  h5 {
+    font-size: 1.8em;
+  }
+  
+  p {
+    font-size: 1.2em; 
+  }
+  
+  li {
+    font-size: 1.2em;
+  }
+
+  .main {
+    padding: 3% 3% 0 0;
+  }
+
+  .appRow {
+    display: flex; 
+    flex-direction: row; 
+  }
+
+  .col-4-custom {
+    width: 30%; 
+  }
+  
+  .col-8-custom {
+    width: 70%;
+  }
+}
+
+
+

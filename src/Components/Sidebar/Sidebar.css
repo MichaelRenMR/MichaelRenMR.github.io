@@ -1,11 +1,11 @@
-#sticky-sidebar {
+.sticky-sidebar {
   position: relative;
   width:100%;
   max-width: 100%;
   background-color: white;
 }
 
-#sidebar-content {
+.sidebar-content {
   padding-left: 8%;
   padding-right: 8%;
   margin-top: 12%;
@@ -18,13 +18,13 @@
 
 
 @media screen and (min-width: 992px){
-  #sticky-sidebar {
+  .sticky-sidebar {
     position: fixed;
     width:28%;
     background-color: white;
   }
 
-  #sidebar-content {
+  .sidebar-content {
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 12%;
@@ -33,35 +33,35 @@
     flex-direction: column; 
     align-items: flex-start; 
   }
-
 }
 
 
 
-#profile-picture {
+.profile-picture {
   position: relative;
   width: 50%;
   padding-bottom: 5%;
 }
 
-#summary {
+.summary {
   color:rgb(128, 128, 128);
 }
 
-#page-nav {
+.page-nav {
   padding-top: 6%; 
   padding-bottom: 6%;
 }
 
-#nav-icons {
+.nav-icons {
   display: flex;
   flex-wrap: wrap-reverse;
 }
 
-#nav-icon {
-  margin: 0.3em;
+.nav-icon {
+  text-align: center;
+  margin: 2%;
 }
 
-i {
-  font-size: 2.2em;
+.nav-icon:hover {
+  background-color: lightgray !important;
 }
