@@ -44,7 +44,7 @@ export default function Sidebar(props) {
           <h3><b>Michael Ren</b></h3>
             <div className="summary">
               <p>
-              Hi! My name is Michael and I’m an undergraduate at UC Berkeley seeking an internship in software development. I’m passionate about cybersecurity, algorithms, and networks. Outside of tech, I'm interested in earth science and pure mathematics.
+              Hi! My name is Michael and I’m an undergraduate at UC Berkeley broadly interested in building scalable, secure, and beautiful systems. I’m passionate about cybersecurity, algorithms, and networks. Outside of tech, I'm interested in earth science and pure mathematics.
               </p>
             </div>
         </div>

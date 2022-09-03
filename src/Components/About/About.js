@@ -17,8 +17,8 @@ export default function About() {
           <img src={require("../../Images/linkedin.jpg")} alt="" className="img-fluid"/>
         </div>
         <p>
-          I'm Michael Ren, an Electrical Engineering and Computer Science major at UC Berkeley. This past summer, I was a 
-          software engineering intern at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
+          I'm Michael Ren, an Electrical Engineering and Computer Sciences major at UC Berkeley. This past summer, I was a software engineering intern at Citadel, where I worked on improving the reliability and scalability of multiple core services.
+          Before that, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
           payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy reading,
           watching TV, and playing ultimate. Feel free to contact me at <a>michael_ren@berkeley.edu</a> or visit any other external
           links on the sidebar to the right! 
@@ -73,6 +73,24 @@ export default function About() {
 
 const timelineEvents = [
   {
+    date: "June-Aug 2022",
+    title: "Citadel",
+    desc: "Software Engineering Intern"
+  },
+  {
+    date: "Jan-May 2022",
+    title: "CS184",
+    desc: "Teaching Assistant"
+  },
+  {
+    date: "2022"
+  },
+  {
+    date: "Aug 2021",
+    title: "Barsky Lab",
+    desc: "Researcher, Vision Correcting Displays"
+  },
+  {
     date: "May-Aug 2021",
     title: "Amazon",
     desc: "Software Engineering Intern",
@@ -117,6 +135,40 @@ const timelineEvents = [
 
 
 const coursework = [
+  {
+    semester: "Fall 2022",
+    courses: [
+      {
+        course: "CS294-163",
+        name: "Secure Systems from Decentralized Trust"
+      },
+      {
+        course: "EECS151",
+        name: "Introduction to Digital Design and Integrated Circuits"
+      },
+      {
+        course: "Math 185",
+        name: "Complex Analysis"
+      },
+    ]
+  },
+  {
+    semester: "Spring 2022",
+    courses: [
+      {
+        course: "CS152",
+        name: "Computer Architecture and Engineering"
+      },
+      {
+        course: "CS189",
+        name: "Machine Learning"
+      },
+      {
+        course: "Math 104",
+        name: "Introduction to Analysis"
+      },
+    ]
+  },
   {
     semester: "Fall 2021",
     courses: [
