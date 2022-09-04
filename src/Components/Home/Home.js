@@ -21,8 +21,8 @@ export default function Home() {
           I'm Michael Ren, an Electrical Engineering and Computer Sciences major at UC Berkeley. This past summer, I was a software engineering intern at Citadel, where I worked on improving the reliability and scalability of multiple core services.
           Before that, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
           payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy reading,
-          watching TV, and playing ultimate. Feel free to contact me at <a>michael_ren@berkeley.edu</a> or visit any other external
-          links on the sidebar to the right! 
+          watching TV, and playing ultimate. Feel free to contact me at <a href="mailto:michael_ren@berkeley.edu">michael_ren@berkeley.edu</a> or visit any other external
+          links on the sidebar to the left! 
         </p>
         <div className="sections">
           <div className="coursework">
