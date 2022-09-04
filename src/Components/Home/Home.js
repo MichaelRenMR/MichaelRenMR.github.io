@@ -22,7 +22,7 @@ export default function Home() {
           Before that, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
           payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy reading,
           watching TV, and playing ultimate. Feel free to contact me at <a href="mailto:michael_ren@berkeley.edu">michael_ren@berkeley.edu</a> or visit any other external
-          links on the sidebar to the left! 
+          links in the sidebar!
         </p>
         <div className="sections">
           <div className="coursework">
