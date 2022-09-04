@@ -14,7 +14,7 @@ export default function Home() {
       <hr/>
       <div className="body">
         <div className="picture">
-          <img src={require("../../Images/linkedin.jpg")} alt="" className="img-fluid"/>
+          <img src={require("../../Images/square.jpg")} alt="" className="img-fluid"/>
         </div>
         <p>
           I'm Michael Ren, an Electrical Engineering and Computer Sciences major at UC Berkeley. This past summer, I was a software engineering intern at Citadel, where I worked on improving the reliability and scalability of multiple core services.
