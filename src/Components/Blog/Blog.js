@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Homepage() {
+export default function Blog() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="blog">
+      <h1>Blog</h1>
       <hr/>
         <p>
           Welcome to my personal website! I'm excited to share everything I've been working on here. For any

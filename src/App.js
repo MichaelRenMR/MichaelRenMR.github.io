@@ -2,9 +2,9 @@ import React from 'react';
 
 import Sidebar from './Components/Sidebar/Sidebar'; 
 
-import Homepage from './Components/Home/Homepage'; 
+import Blog from './Components/Blog/Blog'; 
 import Projects from './Components/Projects/Projects';
-import About from './Components/About/About'; 
+import Home from './Components/Home/Home'; 
 
 import {
   BrowserRouter as Router,
@@ -26,7 +26,7 @@ const routes = [
     path: "/home",
     exact: true,
     sidebar: () => <div>Home</div>,
-    main: () => <Homepage/>
+    main: () => <Home/>
   },
   {
     path: "/projects",
@@ -35,11 +35,12 @@ const routes = [
     main: () => <Projects/>
   },
   {
-    path: "/about",
+    path: "/blog",
     exact: true,
-    sidebar: () => <div>About</div>,
-    main: () => <About/>
+    sidebar: () => <div>Blog</div>,
+    main: () => <Blog/>
   }
+  
 ];
 
 
@@ -67,7 +68,7 @@ function App() {
                         <Redirect to="/projects" />
                       </Route>
                       <Route path = "/">
-                        <Redirect to="/about" />
+                        <Redirect to="/home" />
                       </Route>
                     </Switch>
                   </CSSTransition>

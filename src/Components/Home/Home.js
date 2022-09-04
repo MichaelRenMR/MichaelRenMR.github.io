@@ -5,11 +5,11 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import './About.css'
+import './Home.css'
 
-export default function About() {
+export default function Home() {
   return (
-    <div className="about">
+    <div className="home">
       <h1>About</h1>
       <hr/>
       <div className="body">
