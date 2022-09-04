@@ -4,6 +4,7 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import './Home.css'
 
@@ -46,6 +47,11 @@ export default function Home() {
               <Timeline align="left">
                 {timelineEvents.map((event) => 
                 <TimelineItem>
+                  <TimelineOppositeContent>
+                    {
+                      event.title ? <p><b>{event.date}</b></p> : <p></p>
+                    }
+                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineDot variant={event.title? 'default' : 'outlined'}/>
                     <TimelineConnector/>
@@ -54,7 +60,7 @@ export default function Home() {
                     <div class="timelineContent">
                       {
                         event.title ? 
-                          <p><b>{event.title}</b> - {event.desc}</p> 
+                            <p><b>{event.title}</b> - {event.desc}</p>
                           :
                           <b>{event.date}</b>
                       }
@@ -73,12 +79,12 @@ export default function Home() {
 
 const timelineEvents = [
   {
-    date: "June-Aug 2022",
+    date: "June",
     title: "Citadel",
     desc: "Software Engineering Intern"
   },
   {
-    date: "Jan-May 2022",
+    date: "January",
     title: "CS184",
     desc: "Teaching Assistant"
   },
@@ -86,22 +92,22 @@ const timelineEvents = [
     date: "2022"
   },
   {
-    date: "Aug 2021",
+    date: "August",
     title: "Barsky Lab",
     desc: "Researcher, Vision Correcting Displays"
   },
   {
-    date: "May-Aug 2021",
+    date: "May",
     title: "Amazon",
     desc: "Software Engineering Intern",
   },
   {
-    date: "Jan-May 2021",
+    date: "January",
     title: "EECS16B",
     desc: "Course tutor"
   },
   {
-    date: "Jan 2021",
+    date: "January",
     title: "Ecode @ Berkeley",
     desc: "Software Developer"
   },
@@ -109,17 +115,17 @@ const timelineEvents = [
     date: "2021"
   },
   {
-    date: "Sep 2020",
+    date: "September",
     title: "Creative Commons",
     desc: "ML Researcher"
   },
   {
-    date: "Sep 2020",
+    date: "September",
     title: "AFX Tech",
     desc: "Software Developer",
   },
   {
-    date: "May-Aug 2020",
+    date: "May",
     title: "Climate Action Guide",
     desc: "Software Engineering Intern",
   },
@@ -127,7 +133,7 @@ const timelineEvents = [
     date: "2020"
   },
   {
-    date: "Aug 2019",
+    date: "August",
     title: "Math Undergraduate Student Association",
     desc: "Member"
   }
