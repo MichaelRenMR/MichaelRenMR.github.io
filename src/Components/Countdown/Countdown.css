@@ -1,0 +1,8 @@
+.timer-content {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown {
+  color:indianred;
+}

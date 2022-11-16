@@ -79,12 +79,17 @@ export default function Home() {
 
 const timelineEvents = [
   {
-    date: "June",
+    date: "Sep",
+    title: "SLICE Lab",
+    desc: "Undergrduate Researcher"
+  },
+  {
+    date: "Jun",
     title: "Citadel",
     desc: "Software Engineering Intern"
   },
   {
-    date: "January",
+    date: "Jan",
     title: "CS184",
     desc: "Teaching Assistant"
   },
@@ -92,9 +97,9 @@ const timelineEvents = [
     date: "2022"
   },
   {
-    date: "August",
+    date: "Aug",
     title: "Barsky Lab",
-    desc: "Researcher, Vision Correcting Displays"
+    desc: "Undergrduate Researcher"
   },
   {
     date: "May",
@@ -102,12 +107,12 @@ const timelineEvents = [
     desc: "Software Engineering Intern",
   },
   {
-    date: "January",
+    date: "Jan",
     title: "EECS16B",
     desc: "Course tutor"
   },
   {
-    date: "January",
+    date: "Jan",
     title: "Ecode @ Berkeley",
     desc: "Software Developer"
   },
@@ -115,12 +120,12 @@ const timelineEvents = [
     date: "2021"
   },
   {
-    date: "September",
+    date: "Sep",
     title: "Creative Commons",
     desc: "ML Researcher"
   },
   {
-    date: "September",
+    date: "Sep",
     title: "AFX Tech",
     desc: "Software Developer",
   },
@@ -133,8 +138,8 @@ const timelineEvents = [
     date: "2020"
   },
   {
-    date: "August",
-    title: "Math Undergraduate Student Association",
+    date: "Aug",
+    title: "MUSA",
     desc: "Member"
   }
 ]

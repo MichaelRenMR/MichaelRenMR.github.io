@@ -1,10 +1,11 @@
 import React from 'react';
 
-import Sidebar from './Components/Sidebar/Sidebar'; 
+import Sidebar from './Components/Sidebar/Sidebar';
 
-import Blog from './Components/Blog/Blog'; 
+import Blog from './Components/Blog/Blog';
 import Projects from './Components/Projects/Projects';
-import Home from './Components/Home/Home'; 
+import Home from './Components/Home/Home';
+import Countdown from './Components/Countdown/Countdown';
 
 import {
   BrowserRouter as Router,
@@ -39,6 +40,12 @@ const routes = [
     exact: true,
     sidebar: () => <div>Blog</div>,
     main: () => <Blog/>
+  },
+  {
+    path: "/andyou",
+    exact: true,
+    sidebar: () => "",
+    main: () => <Countdown/>
   }
   
 ];
