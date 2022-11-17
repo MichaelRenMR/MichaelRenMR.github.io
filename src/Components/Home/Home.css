@@ -19,19 +19,16 @@ iframe {
   justify-content: space-between;
 }
 
-.muiTimelineWrapper {
-  margin-left: -63%;
-}
-
 @media screen and (min-width: 992px) {
   .picture {
     width: 30%;
   }
 
   .coursework {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
   .timeline {
+    padding: 1%;
     flex-basis: content;
   }
 }

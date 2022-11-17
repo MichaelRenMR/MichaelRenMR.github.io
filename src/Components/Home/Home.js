@@ -11,7 +11,7 @@ import './Home.css'
 export default function Home() {
   return (
     <div className="home">
-      <h1>About</h1>
+      <h1>Home</h1>
       <hr/>
       <div className="body">
         <div className="picture">
@@ -44,10 +44,10 @@ export default function Home() {
           <div className="timeline">
             <h3>Bio</h3>
             <div className="muiTimelineWrapper">
-              <Timeline align="left">
+              <Timeline style={{padding: '6px 6px 6px 0px'}}>
                 {timelineEvents.map((event) => 
                 <TimelineItem>
-                  <TimelineOppositeContent>
+                  <TimelineOppositeContent style={{flex: 0.1, padding: '0px 10px 0px 0px'}}>
                     {
                       event.title ? <p><b>{event.date}</b></p> : <p></p>
                     }
@@ -56,8 +56,8 @@ export default function Home() {
                     <TimelineDot variant={event.title? 'default' : 'outlined'}/>
                     <TimelineConnector/>
                   </TimelineSeparator>
-                  <TimelineContent>
-                    <div class="timelineContent">
+                  <TimelineContent style={{padding: '0px 0px 0px 10px'}}>
+                    <div className="timelineContent">
                       {
                         event.title ? 
                             <p><b>{event.title}</b> - {event.desc}</p>
@@ -81,7 +81,7 @@ const timelineEvents = [
   {
     date: "Sep",
     title: "SLICE Lab",
-    desc: "Undergrduate Researcher"
+    desc: "Undergraduate Researcher"
   },
   {
     date: "Jun",
@@ -99,7 +99,7 @@ const timelineEvents = [
   {
     date: "Aug",
     title: "Barsky Lab",
-    desc: "Undergrduate Researcher"
+    desc: "Undergraduate Researcher"
   },
   {
     date: "May",
@@ -279,3 +279,4 @@ const coursework = [
     ]
   }
 ]
+

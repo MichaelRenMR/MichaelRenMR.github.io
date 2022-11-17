@@ -17,7 +17,7 @@ export default function Countdown () {
   const [countdown, setCountdown] = useState('');
 
   const calculateCountdown = () => {
-    let difference = endDate - Date.now();
+    let difference = Math.max(0, endDate - Date.now());
     const days = Math.floor(difference / milliDays);
     difference %= milliDays;
     const hours = Math.floor(difference / milliHours);
