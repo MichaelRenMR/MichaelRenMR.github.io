@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from './Components/Sidebar/Sidebar';
 
 import Blog from './Components/Blog/Blog';
+import BlogPost from './Components/Blog/BlogPost';
 import Projects from './Components/Projects/Projects';
 import Home from './Components/Home/Home';
 import Countdown from './Components/Countdown/Countdown';
@@ -40,6 +41,12 @@ const routes = [
     exact: true,
     sidebar: () => <div>Blog</div>,
     main: () => <Blog/>
+  },
+  {
+    path: "/blog/:slug",
+    exact: true,
+    sidebar: () => "",
+    main: () => <BlogPost/>
   },
   {
     path: "/andyou",

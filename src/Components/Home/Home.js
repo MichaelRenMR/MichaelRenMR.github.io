@@ -18,10 +18,7 @@ export default function Home() {
           <img src={require("../../Images/profile-grenwich.jpg")} alt="" className="img-fluid"/>
         </div>
         <p>
-          I'm Michael, currently developing highly scalable trade processing systems at Citadel. I graduated from UC Berkeley EECS prior to working at Citadel. During my undergrad, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
-          payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy leather working,
-          running, and Ultimate Frisbee. Feel free to contact me at <a href="mailto:michaelrenx@gmail.com">michaelrenx@gmail.com</a> or visit any other external
-          links in the sidebar!
+          I'm Michael, currently developing highly scalable trade processing systems at Citadel. I graduated from UC Berkeley (EECS) before joining Citadel. During undergrad I interned at Amazon, improving the functionality and usability of its payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy leatherworking, running, and Ultimate Frisbee. Feel free to contact me at <a href="mailto:michaelrenx@gmail.com">michaelrenx@gmail.com</a> or visit the external links in the sidebar.
         </p>
         <div className="sections">
           <div className="coursework">
@@ -85,7 +82,7 @@ const timelineEvents = [
   {
     date: "May",
     title: "UC Berkeley EECS",
-    desc: "Graduate"
+    desc: "B.S., EECS"
   },
   {
     date: "Jan",

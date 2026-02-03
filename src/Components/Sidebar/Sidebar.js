@@ -7,7 +7,6 @@ import SubjectIcon from '@material-ui/icons/Subject';
 import IconButton from '@material-ui/core/IconButton';
 
 import './Sidebar.css'
-
 const icons = [
   {
     name: "GitHub",
@@ -21,12 +20,12 @@ const icons = [
   },
   {
     name: "Email",
-    link: "mailto:michael_ren@berkeley.edu",
+    link: "mailto:michaelrenx@gmail.com",
     icon: <EmailIcon/>
   }, 
   {
     name: "Resume", 
-    link: "https://docs.google.com/document/d/1JmygbVdS8yFC8sI-3Q8wBFps8AZwCElOzpi2G0zuPqI/edit?usp=sharing", 
+    link: "https://docs.google.com/document/d/1FNialncP3MRoIcX3xLcK89Rfc03CXCbMBsjLFjOyS8M/edit?usp=sharing", 
     icon: <SubjectIcon/>
   }
 ]
@@ -44,7 +43,7 @@ export default function Sidebar(props) {
           <h3><b>Michael Ren</b></h3>
             <div className="summary">
               <p>
-              Hi! I’m Michael, a UC Berkeley EECS grad who builds scalable, auditable systems. I’m interested in cybersecurity, robotics, and chip design; outside tech I love running, earth science, and math.
+              Hi! I’m Michael, a UC Berkeley EECS grad who builds scalable, auditable systems. I’m interested in cybersecurity, robotics, and chip design. Outside of tech, I love running, earth science, and math.
               </p>
             </div>
         </div>

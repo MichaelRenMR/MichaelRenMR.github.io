@@ -23,6 +23,106 @@ html {
   margin-bottom: 3%;
 }
 
+/* link-style button used across the site for subtle navigation */
+.link-button {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+/* Back button: match sidebar icon sizing/shape but keep text black and underlined */
+.back-link-button {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  border-radius: 22px;
+  background: transparent;
+  border: none;
+  margin: 0 8px 0 0;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.2rem;
+  padding: 0 12px;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.back-link-button:hover {
+  background-color: lightgray;
+}
+
+/* Blog post header: keep back button and title visible while scrolling */
+.blog-post-header {
+  position: sticky;
+  top: 16px; /* moved higher */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px 0;
+  z-index: 9999; /* ensure header overlays content */
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  background-clip: padding-box;
+  position: -webkit-sticky;
+}
+
+/* bottom-only subtle shading under header */
+.blog-post-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.06), rgba(0,0,0,0));
+  z-index: 9998;
+ }
+
+.blog-post-title h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.blog-post-body {
+  margin-top: 12px;
+}
+
+/* post list layout and thumbnails */
+.posts .post {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.post-thumb {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.post-meta h2 {
+  margin: 0 0 6px 0;
+}
+
+.post-header-image {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
 .appRow {
   display: flex;  
   flex-direction: column;
