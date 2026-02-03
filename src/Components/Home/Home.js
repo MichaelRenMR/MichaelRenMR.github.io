@@ -15,13 +15,12 @@ export default function Home() {
       <hr/>
       <div className="body">
         <div className="picture">
-          <img src={require("../../Images/square.jpg")} alt="" className="img-fluid"/>
+          <img src={require("../../Images/profile-grenwich.jpg")} alt="" className="img-fluid"/>
         </div>
         <p>
-          I'm Michael Ren, an Electrical Engineering and Computer Sciences major at UC Berkeley. This past summer, I was a software engineering intern at Citadel, where I worked on improving the reliability and scalability of multiple core services.
-          Before that, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
-          payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy reading,
-          watching TV, and playing ultimate. Feel free to contact me at <a href="mailto:michael_ren@berkeley.edu">michael_ren@berkeley.edu</a> or visit any other external
+          I'm Michael, currently developing highly scalable trade processing systems at Citadel. I graduated from UC Berkeley EECS prior to working at Citadel. During my undergrad, I also interned at Amazon, where I worked on improving the functionality and ease of use of Amazon's 
+          payments debugging ecosystem. I'm a passionate teacher, lifelong learner, and math enthusiast. In my free time I enjoy leather working,
+          running, and Ultimate Frisbee. Feel free to contact me at <a href="mailto:michaelrenx@gmail.com">michaelrenx@gmail.com</a> or visit any other external
           links in the sidebar!
         </p>
         <div className="sections">
@@ -79,6 +78,24 @@ export default function Home() {
 
 const timelineEvents = [
   {
+    date: "Sep", 
+    title: "Citadel",
+    desc: "Software Engineer, Accounting"
+  },
+  {
+    date: "May",
+    title: "UC Berkeley EECS",
+    desc: "Graduate"
+  },
+  {
+    date: "Jan",
+    title: "CS184 - Graphics",
+    desc: "Teaching Assistant"
+  },
+  {
+    date: "2023"
+  },
+  {
     date: "Sep",
     title: "SLICE Lab",
     desc: "Undergraduate Researcher"
@@ -90,7 +107,7 @@ const timelineEvents = [
   },
   {
     date: "Jan",
-    title: "CS184",
+    title: "CS184 - Graphics",
     desc: "Teaching Assistant"
   },
   {
@@ -112,11 +129,6 @@ const timelineEvents = [
     desc: "Course tutor"
   },
   {
-    date: "Jan",
-    title: "Ecode @ Berkeley",
-    desc: "Software Developer"
-  },
-  {
     date: "2021"
   },
   {
@@ -128,11 +140,6 @@ const timelineEvents = [
     date: "Sep",
     title: "AFX Tech",
     desc: "Software Developer",
-  },
-  {
-    date: "May",
-    title: "Climate Action Guide",
-    desc: "Software Engineering Intern",
   },
   {
     date: "2020"

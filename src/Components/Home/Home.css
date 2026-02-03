@@ -10,7 +10,7 @@ iframe {
   margin-top: 1vw;
   margin-bottom: 2vw;
   width: 100%;
-  border: 1px solid lightgray;
+  border: none;
 }
 
 .sections {
