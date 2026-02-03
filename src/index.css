@@ -1,5 +1,31 @@
-body {
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --border: rgba(0,0,0,0.08);
+  --hover: rgba(0,0,0,0.06);
+  --link: #1f6feb;
+}
+
+[data-theme="dark"]{
+  --bg: #0b1020;
+  --text: #e6edf3;
+  --muted: #9aa4b2;
+  --card-bg: #0f1724;
+  --border: rgba(255,255,255,0.06);
+  --hover: rgba(255,255,255,0.04);
+  --link: #58a6ff;
+}
+
+html, body {
   margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

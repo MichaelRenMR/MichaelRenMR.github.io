@@ -5,6 +5,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import SubjectIcon from '@material-ui/icons/Subject';
 import IconButton from '@material-ui/core/IconButton';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Brightness7Icon from '@material-ui/icons/Brightness7';
 
 import './Sidebar.css'
 const icons = [
@@ -33,6 +35,8 @@ const icons = [
 
 export default function Sidebar(props) {
   const routes = props.children;
+  const theme = props.theme || 'light';
+  const toggleTheme = props.toggleTheme || (() => {});
   return (
     <div className="sticky-sidebar">
       <div className="sidebar-content">
@@ -62,6 +66,11 @@ export default function Sidebar(props) {
             >
             {icon.icon}
             </IconButton>))}
+        </div>
+        <div className="theme-toggle">
+          <IconButton onClick={toggleTheme} title="Toggle theme" color="inherit">
+            {theme === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
+          </IconButton>
         </div>
       </div>
     </div>

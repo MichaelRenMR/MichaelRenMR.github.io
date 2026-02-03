@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Sidebar from './Components/Sidebar/Sidebar';
 
@@ -58,7 +58,25 @@ const routes = [
 ];
 
 
-function App() {  
+function App() {
+  const [theme, setTheme] = useState(() => {
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved;
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    } catch (e) {}
+    return 'light';
+  });
+
+  useEffect(() => {
+    try {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    } catch (e) {}
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => (t === 'dark' ? 'light' : 'dark'));
+
   return (
     <Router>
       <Route render={({ location }) => (
@@ -66,7 +84,7 @@ function App() {
           <div className="App containerFluid">
             <div className="appRow">
               <div className="col-4-custom sidebar">
-                <Sidebar children={routes}/>
+                <Sidebar children={routes} theme={theme} toggleTheme={toggleTheme} />
               </div>
               <div className="col-8-custom main">
                 <TransitionGroup>

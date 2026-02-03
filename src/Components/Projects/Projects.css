@@ -11,15 +11,17 @@
 
 
 .card {
-  border:none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   margin: 1rem;
   width: 100%;
+  background: var(--card-bg);
 }
 
 .card-horizontal {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 /* ensure children stretch to same height so thumbnails can fill */
@@ -34,12 +36,14 @@
 }
 
 .btn-light {
-  background-color: lightgray;
+  background-color: var(--hover);
+  color: var(--text);
+  border: 1px solid var(--border);
   margin: 0.2rem;
 }
 
 .tools {
-  color: darkslategray;
+  color: var(--muted);
 }
 
 
