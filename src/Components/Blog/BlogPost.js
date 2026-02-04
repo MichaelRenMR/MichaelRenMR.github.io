@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import rehypeHighlight from 'rehype-highlight'
+import "highlight.js/styles/github.css";       // light
+import "highlight.js/styles/github-dark.css";  // dark
 import postsMeta from './postsMeta'
 
 export default function BlogPost() {
@@ -46,6 +49,7 @@ export default function BlogPost() {
   } catch (e) {
     // ignore
   }
+  
 
   return (
     <div className="blog-post" style={{padding: 20}}>
